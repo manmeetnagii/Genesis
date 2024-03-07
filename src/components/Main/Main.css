@@ -34,7 +34,7 @@
 
 .main .greet span{
     background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -122,7 +122,7 @@
 
 .result{
     padding: 0px 5%;
-    min-height: 70vh;
+    max-height: 70vh;
     overflow-y: scroll;
 }
 

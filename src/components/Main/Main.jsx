@@ -15,6 +15,13 @@ const Main = () => {
   } = useContext(Context);
 
 
+  const handleInputKeyPress = (event)=>{
+    if(event.key === 'Enter'){
+      event.preventDefault();
+      onSent();
+    }
+  }
+
 
   return (
     <div className="main">
@@ -81,6 +88,7 @@ const Main = () => {
               onChange={(e) => setInput(e.target.value)}
               value={input}
               type="text"
+              onKeyDown={handleInputKeyPress}
               placeholder="Enter a prompt here"
             />
             <div>
